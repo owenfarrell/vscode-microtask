@@ -1,0 +1,72 @@
+{
+    "name": "vscode-microtask",
+    "version": "1.0.0",
+    "publisher": "owenfarrell",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "license": "MIT",
+    "displayName": "Micro Task Launcher",
+    "description": "Runs a task from a sub folder of your workspace",
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "Workspace",
+        "Task",
+        "Ant",
+        "Maven",
+        "MSBuild"
+    ],
+    "homepage": "https://github.com/owenfarrell/vscode-microtask/",
+    "bugs": {
+        "url": "https://github.com/owenfarrell/vscode-microtask/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/owenfarrell/vscode-microtask.git"
+    },
+    "galleryBanner": {},
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "microtask.runFromHere",
+                "title": "Tasks: Run From Here"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "microtask.runFromHere",
+                    "group": "microtask"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "microtask.runFromHere",
+                    "group": "microtask"
+                }
+            ]
+        }
+    },
+    "activationEvents": [
+        "onCommand:microtask.runFromHere"
+    ],
+    "badges": [],
+    "markdown": "github",
+    "dependencies": {},
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "icon": "icon.png"
+}
