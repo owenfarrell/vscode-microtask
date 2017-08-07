@@ -1,6 +1,6 @@
 {
     "name": "vscode-microtask",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "owenfarrell",
     "engines": {
         "vscode": "^1.13.0"
@@ -12,9 +12,9 @@
         "Other"
     ],
     "keywords": [
-        "Workspace",
         "Task",
         "Ant",
+        "Gradle",
         "Maven",
         "MSBuild"
     ],

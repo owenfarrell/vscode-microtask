@@ -12,7 +12,13 @@ The extension supports running any task defined in the current workspace's task 
 
 ## Features
 
-Microtask provides the ability to launch a task in a subfolder of the current workspace. Microtask is a great way to use common task definitions across multiple modules in a large project. 
+Microtask provides the ability to launch a task in a subfolder of the current workspace. Microtask is a great way to use common task definitions across multiple modules in a large project.
+
+### Usage
+
+Right click on any folder or file in the context menu, or right click in the editor pane and select `Tasks: Run from Here`. The selected task will be run from the selected folder, or the enclosing folder of the selected file.
+
+![Demo](demo.gif)
 
 ## Requirements
 
