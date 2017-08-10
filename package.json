@@ -1,13 +1,13 @@
 {
     "name": "vscode-microtask",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "owenfarrell",
     "engines": {
         "vscode": "^1.13.0"
     },
     "license": "MIT",
-    "displayName": "Micro Task Launcher",
-    "description": "Runs a task from a sub folder of your workspace",
+    "displayName": "µTask",
+    "description": "Runs a task from a subfolder of your workspace",
     "categories": [
         "Other"
     ],
