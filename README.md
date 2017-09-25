@@ -5,6 +5,7 @@
 [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/owenfarrell.vscode-microtask.svg)](https://marketplace.visualstudio.com/items?itemName=owenfarrell.vscode-microtask#review-details)
 
 [![Build Status](https://travis-ci.org/owenfarrell/vscode-microtask.svg?branch=master)](https://travis-ci.org/owenfarrell/vscode-microtask)
+[![bitHound Overall Score](https://www.bithound.io/github/owenfarrell/vscode-microtask/badges/score.svg)](https://www.bithound.io/github/owenfarrell/vscode-microtask)
 
 [Visual Studio Code](https://code.visualstudio.com/) (VS Code) extension that provides the ability to launch a task in a subfolder of the current workspace.
 
