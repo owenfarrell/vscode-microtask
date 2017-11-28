@@ -46,7 +46,7 @@ function loadTaskList() {
                 // Add a quick pick item to the array
                 refreshedItems.push({
                     description: "",
-                    label: element.taskName,
+                    label: element.label || element.taskName,
                     task: element
                 });
             });
