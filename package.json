@@ -57,11 +57,11 @@
     "markdown": "github",
     "dependencies": {},
     "devDependencies": {
-        "typescript": "^2.0.3",
+        "typescript": "^2.6.2",
         "vscode": "^1.1.5",
         "mocha": "^3.5.3",
         "@types/node": "^8.0.30",
-        "@types/mocha": "^2.2.32"
+        "@types/mocha": "^2.2.44"
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
