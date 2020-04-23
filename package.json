@@ -3,7 +3,7 @@
     "version": "1.0.3",
     "publisher": "owenfarrell",
     "engines": {
-        "vscode": "^1.18.1"
+        "vscode": "^1.29.1"
     },
     "license": "MIT",
     "displayName": "µTask",
@@ -32,7 +32,8 @@
         "commands": [
             {
                 "command": "microtask.runFromHere",
-                "title": "Tasks: Run From Here"
+                "title": "Run From Here",
+                "category": "Tasks"
             }
         ],
         "menus": {
@@ -58,10 +59,9 @@
     "dependencies": {},
     "devDependencies": {
         "typescript": "^2.6.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.3",
-        "@types/node": "^8.0.30",
-        "@types/mocha": "^2.2.44"
+        "vscode": "^1.1.36",
+        "@types/mocha": "^2.2.44",
+        "@types/node": "^8.10.60"
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
