@@ -3,7 +3,7 @@
     "version": "1.0.3",
     "publisher": "owenfarrell",
     "engines": {
-        "vscode": "^1.18.1"
+        "vscode": "^1.29.1"
     },
     "license": "MIT",
     "displayName": "µTask",
@@ -27,12 +27,13 @@
         "url": "https://github.com/owenfarrell/vscode-microtask.git"
     },
     "galleryBanner": {},
-    "main": "./out/src/extension",
+    "main": "./dist/extension",
     "contributes": {
         "commands": [
             {
                 "command": "microtask.runFromHere",
-                "title": "Tasks: Run From Here"
+                "title": "Run From Here",
+                "category": "Tasks"
             }
         ],
         "menus": {
@@ -57,15 +58,21 @@
     "markdown": "github",
     "dependencies": {},
     "devDependencies": {
+        "ajv": "^6.9.1",
+        "ts-loader": "^6.2.2",
         "typescript": "^2.6.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.3",
-        "@types/node": "^8.0.30",
-        "@types/mocha": "^2.2.44"
+        "vscode": "^1.1.36",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "@types/mocha": "^2.2.44",
+        "@types/node": "^8.10.60"
     },
     "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
+        "package": "vsce package",
+        "vscode:prepublish": "webpack --mode production",
+        "test-compile": "tsc -p ./",
+        "compile": "webpack --mode development --watch",
+        "webpack": "webpack --mode development",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "icon": "icon.png"
