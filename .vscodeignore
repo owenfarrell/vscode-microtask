@@ -6,7 +6,6 @@
 !LICENSE
 !README.md
 !icon.png
-!node_modules/**
-!out/src/**.js
+!dist/extension.js
 !package-lock.json
 !package.json

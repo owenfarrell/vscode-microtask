@@ -27,7 +27,7 @@
         "url": "https://github.com/owenfarrell/vscode-microtask.git"
     },
     "galleryBanner": {},
-    "main": "./out/src/extension",
+    "main": "./dist/extension",
     "contributes": {
         "commands": [
             {
@@ -58,14 +58,21 @@
     "markdown": "github",
     "dependencies": {},
     "devDependencies": {
+        "ajv": "^6.9.1",
+        "ts-loader": "^6.2.2",
         "typescript": "^2.6.2",
         "vscode": "^1.1.36",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
         "@types/mocha": "^2.2.44",
         "@types/node": "^8.10.60"
     },
     "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
+        "package": "vsce package",
+        "vscode:prepublish": "webpack --mode production",
+        "test-compile": "tsc -p ./",
+        "compile": "webpack --mode development --watch",
+        "webpack": "webpack --mode development",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "icon": "icon.png"
